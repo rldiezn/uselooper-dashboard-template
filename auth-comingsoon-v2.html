@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- End Required meta tags -->
+    <!-- Begin SEO tag -->
+    <title> Coming Soon | Looper - Bootstrap 4 Admin Theme </title>
+    <meta property="og:title" content="Coming Soon">
+    <meta name="author" content="Beni Arisandi">
+    <meta property="og:locale" content="en_US">
+    <meta name="description" content="Responsive admin theme build on top of Bootstrap 4">
+    <meta property="og:description" content="Responsive admin theme build on top of Bootstrap 4">
+    <link rel="canonical" href="//uselooper.com">
+    <meta property="og:url" content="//uselooper.com">
+    <meta property="og:site_name" content="Looper - Bootstrap 4 Admin Theme">
+    <script type="application/ld+json">
+      {
+        "name": "Looper - Bootstrap 4 Admin Theme",
+        "description": "Responsive admin theme build on top of Bootstrap 4",
+        "author":
+        {
+          "@type": "Person",
+          "name": "Beni Arisandi"
+        },
+        "@type": "WebSite",
+        "url": "",
+        "headline": "Coming Soon",
+        "@context": "http://schema.org"
+      }
+    </script>
+    <!-- End SEO tag -->
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/apple-touch-icon.png">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <meta name="theme-color" content="#3063A0">
+    <!-- BEGIN BASE STYLES -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
+    <!-- END BASE STYLES -->
+    <!-- BEGIN THEME STYLES -->
+    <link rel="stylesheet" href="assets/stylesheets/main.min.css">
+    <link rel="stylesheet" href="assets/stylesheets/custom.css">
+    <!-- END THEME STYLES -->
+  </head>
+  <body>
+    <!-- .empty-state -->
+    <main class="empty-state empty-state-fullpage bg-warning" style="background-image: url(assets/images/illustration/img-1.png);">
+      <!-- .empty-state-container -->
+      <div class="empty-state-container">
+        <div id="clock" class="countdown display-3">
+          <div class="countdown-item"> 00
+            <small>Days</small>
+          </div>
+          <div class="countdown-item"> 00
+            <small>Hr</small>
+          </div>
+          <div class="countdown-item"> 00
+            <small>Min</small>
+          </div>
+          <div class="countdown-item"> 00
+            <small>Sec</small>
+          </div>
+        </div>
+        <h1 class="state-header"> WE'RE LAUNCHING SOON </h1>
+        <p class="state-description lead"> We're a Creative Agency based in Europe. Be the first to know when we live. </p>
+        <form class="w-75 mx-auto">
+          <div class="form-group">
+            <div class="input-group input-group-lg circle">
+              <input type="email" class="form-control" placeholder="Your email">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-primary circle">
+                  <span class="d-none d-sm-inline">Subcribe</span>
+                  <span class="d-inline d-sm-none" aria-label="Subcribe">
+                    <i class="fa fa-arrow-circle-right"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="state-action">
+          <a href="#" class="btn btn-reset text-muted">
+            <i class="fab fa-fw fa-facebook"></i>
+          </a>
+          <a href="#" class="btn btn-reset text-muted">
+            <i class="fab fa-fw fa-twitter"></i>
+          </a>
+          <a href="#" class="btn btn-reset text-muted">
+            <i class="fab fa-fw fa-instagram"></i>
+          </a>
+          <a href="#" class="btn btn-reset text-muted">
+            <i class="fab fa-fw fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <!-- /.empty-state-container -->
+    </main>
+    <!-- /.empty-state -->
+    <!-- BEGIN JS -->
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date('July 11, 2018 15:37:25').getTime();
+      var countDownFormater = function(i)
+      {
+        return i < 10 ? '0' + i : i;
+      }
+      // Update the count down every 1 second
+      var countDown = setInterval(function()
+      {
+        // Get todays date and time
+        var now = new Date().getTime();
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Display the result in the element with id='clock'
+        document.querySelector('#clock').innerHTML = '' + '<div class="countdown-item">' + countDownFormater(days) + ' <small>Days<\/small><\/div>' + '<div class="countdown-item">' + countDownFormater(hours) + ' <small>Hr<\/small><\/div>' + '<div class="countdown-item">' + countDownFormater(minutes) + ' <small>Min<\/small><\/div>' + '<div class="countdown-item">' + countDownFormater(seconds) + ' <small>Sec<\/small><\/div>';
+        // If the count down is finished, write some text
+        if (distance < 0)
+        {
+          clearInterval(countDown);
+          document.querySelector('#clock').innerHTML = 'We\'ll Live Soon';
+        }
+      }, 1000);
+    </script>
+    <!-- END JS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116692175-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag()
+      {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-116692175-1');
+    </script>
+  </body>
+</html>

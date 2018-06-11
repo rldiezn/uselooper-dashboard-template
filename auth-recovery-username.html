@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- End Required meta tags -->
+    <!-- Begin SEO tag -->
+    <title> Forgot Username | Looper - Bootstrap 4 Admin Theme </title>
+    <meta property="og:title" content="Forgot Username">
+    <meta name="author" content="Beni Arisandi">
+    <meta property="og:locale" content="en_US">
+    <meta name="description" content="Responsive admin theme build on top of Bootstrap 4">
+    <meta property="og:description" content="Responsive admin theme build on top of Bootstrap 4">
+    <link rel="canonical" href="//uselooper.com">
+    <meta property="og:url" content="//uselooper.com">
+    <meta property="og:site_name" content="Looper - Bootstrap 4 Admin Theme">
+    <script type="application/ld+json">
+      {
+        "name": "Looper - Bootstrap 4 Admin Theme",
+        "description": "Responsive admin theme build on top of Bootstrap 4",
+        "author":
+        {
+          "@type": "Person",
+          "name": "Beni Arisandi"
+        },
+        "@type": "WebSite",
+        "url": "",
+        "headline": "Forgot Username",
+        "@context": "http://schema.org"
+      }
+    </script>
+    <!-- End SEO tag -->
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/apple-touch-icon.png">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <meta name="theme-color" content="#3063A0">
+    <!-- BEGIN BASE STYLES -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
+    <!-- END BASE STYLES -->
+    <!-- BEGIN THEME STYLES -->
+    <link rel="stylesheet" href="assets/stylesheets/main.min.css">
+    <link rel="stylesheet" href="assets/stylesheets/custom.css">
+    <!-- END THEME STYLES -->
+  </head>
+  <body>
+    <!-- .auth -->
+    <main class="auth">
+      <!-- form -->
+      <form class="auth-form auth-form-reflow">
+        <div class="text-center mb-4">
+          <div class="mb-4">
+            <img class="rounded" src="assets/apple-touch-icon.png" alt="" height="72"> </div>
+          <h1 class="h3"> Recover Your Username </h1>
+        </div>
+        <p class="mb-4"> Tempora iusto officia magnam fugiat sequi aliquam cum consectetur aperiam beatae, rerum obcaecati ea. </p>
+        <!-- Expansion Cards -->
+        <div id="recovery-mode" class="card-expansion">
+          <!-- .card-expansion-item -->
+          <section class="card card-reflow card-expansion-item expanded">
+            <header class="card-header px-0 border-0" id="recoverByEmail">
+              <button type="button" class="btn btn-reset" data-toggle="collapse" data-target="#byEmail" aria-expanded="true" aria-controls="byEmail">
+                <span class="collapse-indicator mr-2">
+                  <i class="far fa-lg fa-circle"></i>
+                </span>
+                <strong>Recover using your email address</strong>
+              </button>
+            </header>
+            <div id="byEmail" class="collapse show" aria-labelledby="recoverByEmail" data-parent="#recovery-mode">
+              <div class="card-body pt-0 pl-5">
+                <input type="email" name="recoverEmail" class="form-control form-control-lg" placeholder="Ex: john@uselooper.com"> </div>
+            </div>
+          </section>
+          <!-- /.card-expansion-item -->
+          <!-- .card-expansion-item -->
+          <section class="card card-reflow card-expansion-item">
+            <header class="card-header px-0 border-0" id="recoverByMobile">
+              <button type="button" class="btn btn-reset" data-toggle="collapse" data-target="#byMobile" aria-expanded="false" aria-controls="byMobile">
+                <span class="collapse-indicator mr-2">
+                  <i class="far fa-lg fa-circle"></i>
+                </span>
+                <strong>Recover using your mobile number</strong>
+              </button>
+            </header>
+            <div id="byMobile" class="collapse" aria-labelledby="recoverByMobile" data-parent="#recovery-mode">
+              <div class="card-body pt-0 pl-5">
+                <!-- .form-group -->
+                <div class="form-group mb-4">
+                  <select name="inputCountry" class="custom-select">
+                    <option value=""> Select Country </option>
+                  </select>
+                </div>
+                <!-- /.form-group -->
+                <!-- .form-group -->
+                <div class="form-group mb-4">
+                  <label class="d-block text-left" for="inputMobile">Mobile Number</label>
+                  <input type="telp" id="inputMobile" name="inputMobile" class="form-control form-control-lg"> </div>
+                <!-- /.form-group -->
+              </div>
+            </div>
+          </section>
+          <!-- /.card-expansion-item -->
+        </div>
+        <!-- /Expansion Cards -->
+        <!-- actions -->
+        <div class="d-block d-md-inline-block mb-2">
+          <button class="btn btn-lg btn-block btn-primary" type="submit">Recover Username</button>
+        </div>
+        <div class="d-block d-md-inline-block">
+          <a href="auth-signin-v1.html" class="btn btn-block btn-light">Return to signin</a>
+        </div>
+      </form>
+      <!-- /.auth-form -->
+      <footer class="auth-footer mt-5"> © 2018 All Rights Reserved. Looper is Responsive Admin Theme build on top of latest Bootstrap 4.
+        <a href="#">Privacy</a> and
+        <a href="#">Terms</a>
+      </footer>
+    </main>
+    <!-- /.auth -->
+    <!-- BEGIN BASE JS -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- END BASE JS -->
+    <!-- BEGIN THEME JS -->
+    <script src="assets/javascript/main.min.js"></script>
+    <!-- END THEME JS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116692175-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag()
+      {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-116692175-1');
+    </script>
+  </body>
+</html>
